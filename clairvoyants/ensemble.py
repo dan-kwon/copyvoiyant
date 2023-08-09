@@ -458,7 +458,7 @@ def prophet_linear_lt(history,
       prophet_model.add_regressor(x_reg_col)
   
   random.seed(12345)
-  prophet_fit = prophet_model.fit(history, n_jobs=1)
+  prophet_fit = prophet_model.fit(history)
   
   prophet_fcst = prophet_fit.predict(prophet_fcst_df)
   
